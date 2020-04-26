@@ -1,0 +1,116 @@
+.App {
+  text-align: center;
+}
+.carousel-inner > .item > img {
+  width: 100%;
+  height: 208px;
+}
+.App-logo {
+  width: 100px;
+  height: 50px;
+}
+
+.h2-responsive {
+  color: white;
+  font-weight: bold;
+}
+
+.body {
+  background-color: white !important;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.navLinkservice {
+  color: Black !important;
+}
+
+.desc {
+  color: red;
+  font-style: "italic";
+  font-weight: bold;
+}
+.App-intro {
+  margin-left: 10px;
+}
+
+.inputStyle {
+  width: 50% !important;
+}
+/*.Container {
+  background-image: url(./bgTheme.png);
+}
+
+.body {
+  background-image: url(./bgTheme.png) !important;
+}*/
+
+.navbar.navbar-light .breadcrumb .nav-item.active > .nav-link,
+.navbar.navbar-light .navbar-nav .nav-item.active > .nav-link {
+  background-color: #201c29 !important;
+}
+
+.row {
+  margin-right: 0px !important;
+}
+#logo {
+  padding-top: 10px;
+  padding-left: 10px;
+  width: 110px;
+  height: 50px;
+}
+.navbar {
+  font-weight: 600 !important;
+}
+
+.nav-link {
+  padding-left: 2em !important;
+  padding-right: 2em !important;
+}
+.blueFont {
+  color: #2196f3 !important;
+}
+.tabcolor {
+  background-color: black !important;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo-notused {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.OfferImg {
+  width: 100%;
+  height: 40%;
+}
+
+.login {
+  color: white !important;
+  font-weight: 600 !important;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
