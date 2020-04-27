@@ -9,7 +9,7 @@ function log(error) {
 }
 
 export function getServiceRequests(userId) {
-  return http.get(apiUrl + userId);
+  return http.get(userId);
 }
 
 http.setJwt(getJwt());
@@ -20,14 +20,14 @@ export function saveServiceRequests(serviceObj) {
   const tempObj = { ...serviceObj.data, _id: serviceObj._id };
 
   if (serviceObj._id) {
-    return http.put(apiUrl + "serviceReq/editServiceRequest", tempObj);
+    return http.put("serviceReq/editServiceRequest", tempObj);
   }
   //adding new service request
-  return http.put(apiUrl + "serviceReq/saveServiceRequest", serviceObj.data);
+  return http.put("serviceReq/saveServiceRequest", serviceObj.data);
 }
 
 export function register(user) {
-  var resp = http.post(apiUrl + "userAcct", {
+  var resp = http.post("userAcct", {
     email: user.username,
     password: user.password,
     name: user.name,
@@ -36,7 +36,7 @@ export function register(user) {
 }
 
 export async function login(user) {
-  var resp = await http.post(apiUrl + "userAcct/auth", {
+  var resp = await http.post("userAcct/auth", {
     email: user.username,
     password: user.password,
   });
