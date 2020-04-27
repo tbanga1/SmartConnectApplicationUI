@@ -11,6 +11,7 @@ import TeamPage from "./components/teamComponent";
 import Login from "./components/loginComponent";
 import Register from "./components/registerComponent";
 import LogoutPage from "./components/logoutComponent";
+import ContactComponent from "./components/contactComponent";
 import auth from "./services/userService";
 
 import "./App.css";
@@ -60,6 +61,11 @@ class App extends React.Component {
           <Route exact path="/AboutUs" component={TeamPage} />
           <Route exact path="/Offers" component={OffersPage} />
           <Route exact path="/not-found" component={Notfound} />
+          <Route
+            exact
+            path="/Services/contactUs"
+            component={ContactComponent}
+          />
           <Redirect to="/not-found" />
         </Switch>
       </div>
