@@ -7,7 +7,7 @@ import {
   MDBCardTitle,
   MDBCardText,
   MDBRow,
-  MDBCol
+  MDBCol,
 } from "mdbreact";
 
 import locator from "../Service_locator.jpg";
@@ -17,7 +17,7 @@ import contactUs from "../ContactCustRep.jpg";
 class ConnectPage extends Component {
   scheduleRequest = () => {
     console.log("schedule clicked from home page", this.props.data); //write api to savedata in database and send back to srvices page
-    this.props.data.history.push("/Services/newRequest/0"); // go to schedule services page
+    this.props.data.history.push("/Services/request/new"); // go to schedule services page
   };
   render() {
     console.log("in connect clicked", this.props.data);
