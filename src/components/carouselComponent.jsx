@@ -63,7 +63,7 @@ class CarouselPage extends Component {
                 />
               </MDBView>
               <MDBCarouselCaption>
-                <h3 className="h2-responsive">Home Appliances Support</h3>
+                <h3 className="h2-responsive">Home appliances support</h3>
                 <p>How can we help you?</p>
               </MDBCarouselCaption>
             </MDBCarouselItem>
