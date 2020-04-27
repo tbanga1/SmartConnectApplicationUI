@@ -23,7 +23,7 @@ class ConnectPage extends Component {
 
   contactUs = () => {
     console.log("schedule clicked from home page", this.props.data); //write api to savedata in database and send back to srvices page
-    this.props.data.history.push("/Services/contactUs"); // go to schedule services page
+    this.props.data.history.push("/contactUs"); // go to schedule services page
   };
 
   render() {

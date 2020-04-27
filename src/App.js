@@ -29,6 +29,7 @@ class App extends React.Component {
       <div className="Container">
         <Navbar user={this.state.user} />
         <Switch>
+          <Route exact path="/contactUs" component={ContactComponent} />
           <Route
             exact
             path="/Services/:userId"
@@ -61,11 +62,6 @@ class App extends React.Component {
           <Route exact path="/AboutUs" component={TeamPage} />
           <Route exact path="/Offers" component={OffersPage} />
           <Route exact path="/not-found" component={Notfound} />
-          <Route
-            exact
-            path="/Services/contactUs"
-            component={ContactComponent}
-          />
           <Redirect to="/not-found" />
         </Switch>
       </div>
