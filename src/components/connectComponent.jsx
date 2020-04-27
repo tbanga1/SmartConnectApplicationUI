@@ -8,6 +8,7 @@ import {
   MDBCardText,
   MDBRow,
   MDBCol,
+  MDBIcon,
 } from "mdbreact";
 
 import locator from "../Service_locator.jpg";
@@ -19,6 +20,12 @@ class ConnectPage extends Component {
     console.log("schedule clicked from home page", this.props.data); //write api to savedata in database and send back to srvices page
     this.props.data.history.push("/Services/request/new"); // go to schedule services page
   };
+
+  contactUs = () => {
+    console.log("schedule clicked from home page", this.props.data); //write api to savedata in database and send back to srvices page
+    this.props.data.history.push("/Services/contactUs"); // go to schedule services page
+  };
+
   render() {
     console.log("in connect clicked", this.props.data);
 
@@ -61,7 +68,22 @@ class ConnectPage extends Component {
                 Our customer care center is ready to help weekdays from 8 a.m.
                 to 8 p.m. EST—by phone, chat or email.
               </MDBCardText>
-              <MDBBtn onClick={() => this.scheduleRequest()}>Contact Me</MDBBtn>
+              <MDBBtn onClick={() => this.contactUs()}>Contact Us</MDBBtn>
+
+              <a href="#!" className="fa-lg p-2 m-2 fb-ic">
+                <MDBIcon
+                  fab
+                  icon="facebook-f"
+                  size="lg"
+                  className="white-text"
+                />
+              </a>
+              <a href="#!" className="fa-lg p-2 m-2 tw-ic">
+                <MDBIcon fab className="fa-twitter white-text fa-lg" />
+              </a>
+              <a href="#!" className="fa-lg p-2 m-2 gplus-ic">
+                <MDBIcon fab className="fa-google-plus-g white-text fa-lg" />
+              </a>
             </MDBCardBody>
           </MDBCard>
         </MDBCol>
