@@ -22,11 +22,11 @@ class ContactComponent extends Component {
           </div>
 
           <div class="col-md-6 mb-4 map">
-            <h3>
+            {/* <h3>
               <span class="fa fa-map"></span>Maps
             </h3>
             <br />
-            {/*<div class="map">
+           <div class="map">
               <iframe
                 width="500"
                 height="450"
