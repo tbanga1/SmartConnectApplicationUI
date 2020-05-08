@@ -26,16 +26,16 @@ class ContactComponent extends Component {
               <span class="fa fa-map"></span>Maps
             </h3>
             <br />
-            <div class="map">
-              {/*<iframe
+            {/*<div class="map">
+              <iframe
                 width="500"
                 height="450"
                 frameborder="0"
                 style="border:0"
                 src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJLX2exqIPyIkRXmWz1aR-K6I&key=AIzaSyCc-O4BAlkPlieOJYfB2ovpHxEMu27ajPA"
                 allowfullscreen
-></iframe>*/}
-            </div>
+></iframe>
+            </div>*/}
           </div>
           <div class="col-md-1"></div>
         </div>
