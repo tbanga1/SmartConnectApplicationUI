@@ -13,6 +13,7 @@ import Register from "./components/registerComponent";
 import LogoutPage from "./components/logoutComponent";
 import ContactComponent from "./components/contactComponent";
 import auth from "./services/userService";
+import MapPage from "./components/map";
 
 import "./App.css";
 
@@ -61,6 +62,7 @@ class App extends React.Component {
           <Route exact path="/logout" component={LogoutPage} />
           <Route exact path="/AboutUs" component={TeamPage} />
           <Route exact path="/Offers" component={OffersPage} />
+          <Route exact path="/maps" component={MapPage} />
           <Route exact path="/not-found" component={Notfound} />
           <Redirect to="/not-found" />
         </Switch>

@@ -26,6 +26,11 @@ class ConnectPage extends Component {
     this.props.data.history.push("/contactUs"); // go to schedule services page
   };
 
+  showLocations = () => {
+    console.log("location"); //write api to savedata in database and send back to srvices page
+    this.props.data.history.push("/maps");
+  };
+
   render() {
     console.log("in connect clicked", this.props.data);
 
