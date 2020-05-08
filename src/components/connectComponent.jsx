@@ -58,7 +58,7 @@ class ConnectPage extends Component {
               <MDBCardText>
                 Quick view of all our Service Locations in baltimore
               </MDBCardText>
-              <MDBBtn onClick={() => this.scheduleRequest()}>Locate</MDBBtn>
+              <MDBBtn onClick={() => this.showLocations()}>Locate</MDBBtn>
             </MDBCardBody>
           </MDBCard>
         </MDBCol>
